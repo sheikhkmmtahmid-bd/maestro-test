@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Maestro Solutions Ltd.</title>
+  <meta name="description" content="Get in touch with Maestro Solutions Ltd. for pricing, support, or enquiries about our ISP software products.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .map-wrap {
+      margin: 0.8rem 0 1.8rem;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border-dim);
+      position: relative;
+      background: var(--navy-card);
+    }
+    .map-wrap iframe {
+      width: 100%;
+      height: 240px;
+      border: none;
+      display: block;
+    }
+    .map-open-btn {
+      position: absolute;
+      bottom: 0.7rem;
+      right: 0.7rem;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--navy);
+      background: var(--gold);
+      padding: 0.38rem 0.8rem;
+      border-radius: 20px;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: opacity 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.35);
+    }
+    .map-open-btn:hover { opacity: 0.88; color: var(--navy); }
+    .map-open-btn svg { width: 11px; height: 11px; }
+  </style>
+</head>
+<body>
+
+<!-- PAGE HERO -->
+<section class="page-hero bg-pattern" style="position:relative;overflow:hidden;">
+  <div class="bg-grid"></div>
+  <div class="bg-glow" style="width:700px;height:400px;background:radial-gradient(ellipse,rgba(200,169,110,0.06) 0%,transparent 70%);top:50%;right:0;transform:translateY(-50%);"></div>
+  <div class="container page-hero-content">
+    <div class="label-tag">Get In Touch</div>
+    <h1>Contact <em style="font-style:italic;color:var(--gold);">Maestro</em></h1>
+    <div class="divider-gold"></div>
+    <p style="font-size:1.05rem;max-width:560px;color:var(--text-muted);">Whether you need a quote, product demo, or ongoing support — our team is ready to help.</p>
+  </div>
+</section>
+
+<!-- MAIN SECTION -->
+<section class="section" style="position:relative;overflow:hidden;">
+  <div class="bg-grid"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="contact-grid">
+
+      <!-- LEFT: Contact Info -->
+      <div class="animate-up">
+        <div class="label-tag">Our Details</div>
+        <h2 style="font-size:1.8rem;margin-bottom:1.5rem;">Let's Talk</h2>
+
+        <!-- Email -->
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-label">Email</div>
+            <div class="contact-info-value">
+              <a href="mailto:info@maestro.com.bd">info&#64;maestro.com.bd</a><br>
+              <a href="mailto:ahsan@maestro.com.bd">ahsan&#64;maestro.com.bd</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14z"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-label">Phone</div>
+            <div class="contact-info-value">
+              <a href="tel:+8801713336401">+880 1713 336 401</a><br>
+              <a href="tel:+8801713336406">+880 1713 336 406</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Address + Map -->
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div style="width:100%;">
+            <div class="contact-info-label">Office Address</div>
+            <div class="contact-info-value" style="font-size:0.9rem;line-height:1.6;">
+              Flat 3A, Amena Villa<br>
+              House 226/2/Ta/3, West Agargaon (60 feet)<br>
+              Sher-e-Bangla Nagar, Dhaka-1207<br>
+              Bangladesh
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Map -->
+        <div class="map-wrap">
+          <iframe
+            title="Maestro Solutions Ltd. — West Agargaon, Dhaka"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=90.360%2C23.772%2C90.374%2C23.780&layer=mapnik&marker=23.7760%2C90.3670"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+          <a
+            class="map-open-btn"
+            href="https://www.openstreetmap.org/?mlat=23.7760&mlon=90.3670#map=17/23.7760/90.3670"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open location in OpenStreetMap">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Open in Maps
+          </a>
+        </div>
+
+        <!-- Support Hours -->
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-label">Support Hours</div>
+            <div class="contact-info-value" style="font-size:0.9rem;">
+              Sunday – Thursday: 9:00 AM – 6:00 PM<br>
+              <span style="font-size:0.82rem;color:var(--text-dim);">Bangladesh Standard Time (BST, UTC+6)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social -->
+        <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--border-dim);">
+          <div class="contact-info-label" style="margin-bottom:1rem;">Follow Us</div>
+          <div style="display:flex;gap:0.8rem;">
+            <a href="https://www.facebook.com/maestro.com.bd" target="_blank" rel="noopener"
+               style="display:flex;align-items:center;gap:0.5rem;padding:0.65rem 1.1rem;background:rgba(200,169,110,0.06);border:1px solid var(--border-dim);border-radius:8px;font-size:0.83rem;color:var(--text-muted);transition:all 0.3s;"
+               onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)';"
+               onmouseout="this.style.borderColor='var(--border-dim)';this.style.color='var(--text-muted)';">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px;flex-shrink:0;"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+              Facebook
+            </a>
+            <a href="https://www.linkedin.com/company/maestro-solutions-ltd/" target="_blank" rel="noopener"
+               style="display:flex;align-items:center;gap:0.5rem;padding:0.65rem 1.1rem;background:rgba(200,169,110,0.06);border:1px solid var(--border-dim);border-radius:8px;font-size:0.83rem;color:var(--text-muted);transition:all 0.3s;"
+               onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)';"
+               onmouseout="this.style.borderColor='var(--border-dim)';this.style.color='var(--text-muted)';">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px;flex-shrink:0;"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <!-- Client Portal -->
+        <div style="margin-top:1.5rem;padding:1.5rem;background:rgba(200,169,110,0.06);border:1px solid rgba(200,169,110,0.2);border-radius:var(--radius);">
+          <div style="font-size:0.78rem;color:var(--gold);font-weight:600;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem;">Existing Client?</div>
+          <p style="font-size:0.88rem;margin-bottom:1rem;">Log in to the Maestro Client Portal for billing, support tickets, and account management.</p>
+          <a href="https://user.maestro.com.bd/client/login" target="_blank" class="btn btn-outline" style="font-size:0.85rem;padding:0.6rem 1.3rem;">
+            Access Client Portal
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Contact Form -->
+      <div class="animate-up animate-delay-2">
+        <div class="contact-form-wrap">
+          <div class="label-tag">Send a Message</div>
+          <h3 style="margin-bottom:1.5rem;">How can we help?</h3>
+
+          <div id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" placeholder="Your full name" autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="fcompany">Company / ISP</label>
+                <input type="text" id="fcompany" placeholder="Your company name">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="femail">Email Address</label>
+                <input type="email" id="femail" placeholder="your@email.com" autocomplete="email">
+              </div>
+              <div class="form-group">
+                <label for="fphone">Phone Number</label>
+                <input type="tel" id="fphone" placeholder="+880 ..." autocomplete="tel">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fsubject">Subject / Product Interest</label>
+              <select id="fsubject">
+                <option value="">Select a topic...</option>
+                <option value="IP Log Server Enquiry">IP Log Server Enquiry</option>
+                <option value="MaXim ISP Billing">MaXim ISP Billing</option>
+                <option value="SMS Gateway">SMS Gateway</option>
+                <option value="SafeNetFilter">SafeNetFilter</option>
+                <option value="Technical Support">Technical Support</option>
+                <option value="Other Enquiry">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Message</label>
+              <textarea id="fmessage" placeholder="Tell us about your network size, current challenges, or any questions you have..."></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" style="width:100%;justify-content:center;" onclick="submitContactForm()">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+            <p style="font-size:0.78rem;text-align:center;margin-top:1rem;color:var(--text-dim);">
+              Or email us directly at
+              <a href="mailto:info@maestro.com.bd" style="color:var(--gold);">info&#64;maestro.com.bd</a>
+            </p>
+          </div>
+
+          <div class="form-success" id="formSuccess">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <h3 style="margin-bottom:0.5rem;">Message Sent!</h3>
+            <p>Thank you for reaching out. Our team will get back to you within one business day.</p>
+            <p style="margin-top:0.5rem;font-size:0.85rem;">
+              You can also call us at <a href="tel:+8801713336401">+880 1713 336 401</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script src="shared.js"></script>
+<script>
+function submitContactForm() {
+  var name    = document.getElementById('fname').value.trim();
+  var email   = document.getElementById('femail').value.trim();
+  var message = document.getElementById('fmessage').value.trim();
+
+  if (!name || !email || !message) {
+    alert('Please fill in your name, email address, and message before sending.');
+    return;
+  }
+
+  var company = document.getElementById('fcompany').value.trim();
+  var phone   = document.getElementById('fphone').value.trim();
+  var subject = document.getElementById('fsubject').value || 'Website Enquiry';
+
+  var lines = ['Name: ' + name];
+  if (company) lines.push('Company: ' + company);
+  if (phone)   lines.push('Phone: ' + phone);
+  lines.push('Email: ' + email, '', 'Message:', message);
+
+  var mailto = 'mailto:info@maestro.com.bd'
+    + '?subject=' + encodeURIComponent(subject)
+    + '&body='    + encodeURIComponent(lines.join('\n'));
+
+  window.location.href = mailto;
+
+  document.getElementById('contactForm').style.display = 'none';
+  document.getElementById('formSuccess').style.display = 'block';
+}
+</script>
+</body>
+</html>
