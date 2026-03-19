@@ -174,6 +174,7 @@ function injectFooter() {
       </div>
       <div class="footer-bottom">
         <p style="color:var(--text-dim);">© 2017–2026 Maestro Solutions Ltd. All Rights Reserved. Trade License: TRAD/DNCC/138637/2022</p>
+        <p class="footer-powered-by">Powered by <a href="https://skmmt.rootexception.com/" target="_blank" rel="noopener">SKMMT</a></p>
         <div class="footer-bottom-links">
           <a href="terms.html">Terms</a>
           <a href="privacy.html">Privacy</a>

@@ -2,7 +2,7 @@
    MAESTRO SOLUTIONS LTD — GLOBAL CSS
    =================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&family=Outfit:wght@900&display=swap');
 
 /* ─── CSS VARIABLES ─── */
 :root {
@@ -1254,6 +1254,24 @@ img { max-width: 100%; display: block; }
 }
 
 .footer-bottom-links a:hover { color: var(--gold); }
+
+.footer-powered-by {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+.footer-powered-by a {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 900;
+  font-size: 0.82rem;
+  color: var(--gold);
+  letter-spacing: 0.06em;
+  transition: color var(--transition);
+  text-decoration: none;
+}
+
+.footer-powered-by a:hover { color: var(--gold-light); }
 
 /* ─── SECTION BACKGROUNDS ─── */
 .bg-navy-mid { background: var(--navy-mid); }
