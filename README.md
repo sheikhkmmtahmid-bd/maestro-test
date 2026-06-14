@@ -1,73 +1,66 @@
-# Purbachal Apparel Limited - Official Website V2
+# Maestro Solutions Ltd. — Company Website
 
-This is the official demo website for Purbachal Apparel Limited, a woven garment manufacturer and 100% exporter based in Gazipur, Bangladesh.
+Static marketing website for **Maestro Solutions Ltd.**, Bangladesh's leading ISP software company, founded in 2000. BTRC-approved and Cyber Police Bureau certified.
 
-## About the Project
+**Update Demo site for** [maestro.com.bd](https://maestro.com.bd/)
+**Built by** [SKMMT](http://skmmt.rootexception.com/)
 
-This is a complete rebuild of the company website. The goal was to create something clean, professional, and appropriate for B2B buyers and international retail partners browsing the site.
-
-The site covers everything a potential buyer needs: who we are, what we make, our certifications, our clients, and how to get in touch.
+---
 
 ## Pages
 
-- **Home** - Company overview with key stats and capabilities
-- **About Us** - History, board of directors, mission, and factory overview
-- **Our Clients** - Global retail partners with country details
-- **Certifications** - Full list of compliance and quality certifications
-- **Our Products** - Kid's Wear, Men's Wear, and Women's Wear with image carousel
-- **Sustainability** - Environmental and CSR initiatives
-- **Our Team** - Board of directors profiles
-- **Contact Us** - Get in touch and request a quote
+| File | Route |
+|---|---|
+| [index.html](index.html) | Home — hero, product overview, clients ticker, about teaser |
+| [about.html](about.html) | Company story, team, expertise |
+| [products.html](products.html) | Full product details and pricing |
+| [clients.html](clients.html) | Client list |
+| [contact.html](contact.html) | Contact form and office info |
+| [delivery.html](delivery.html) | Delivery policy |
+| [privacy.html](privacy.html) | Privacy policy |
+| [refund.html](refund.html) | Refund policy |
+| [terms.html](terms.html) | Terms and conditions |
+
+## Products
+
+- **IP Log Server** — Collects, stores, and searches user logs from MikroTik and remote routers. BTRC-compliant with automatic backup and search dashboard.
+- **MaXim ISP Billing** — Full ISP management ERP: Radius/API billing, reseller management, CRM, payment gateway integration, accounting, and customer self-service portal.
+- **SMS Gateway** — Bulk and transactional SMS for ISPs and enterprises.
+- **SafeNetFilter** — Content filtering and network protection for ISPs.
 
 ## Tech Stack
 
-Plain HTML, CSS, and vanilla JavaScript. No frameworks, no build tools. Just open any `.html` file in a browser and it works.
+- Vanilla HTML, CSS, JavaScript — no build step, no framework
+- Google Fonts: Cormorant Garamond (display), DM Sans (body), Outfit (accent)
+- CSS custom properties for the navy/gold theme
+- [shared.js](shared.js) injects the navbar, announce bar, and footer into every page
 
-- Google Fonts: Outfit + DM Sans
-- One shared stylesheet: `styles.css`
-- One shared script: `nav.js`
+## Project Structure
 
-## Key Features
+```
+├── index.html          # Home page
+├── about.html
+├── products.html
+├── clients.html
+├── contact.html
+├── delivery.html
+├── privacy.html
+├── refund.html
+├── terms.html
+├── style.css           # Global styles and design tokens
+├── shared.js           # Shared nav + footer injection
+├── maestro-logo.png    # Full logo (hexagon + wordmark)
+├── favicon.ico         # Hexagon icon — 16/32/48/64 px sizes
+├── favicon.png         # Hexagon icon — 32 px PNG
+└── team-palash.png     # Team member photo
+```
 
-- Fully responsive across desktop, tablet, and mobile
-- Product image carousel with category filtering (Kids / Men / Women)
-- Lightbox image viewer on the products page
-- Scroll reveal animations and counter animations
-- WhatsApp and back-to-top floating buttons
-- BGMEA No. 6356, ERC No. BA 26032610788220
+## Development
 
-## Company
+Open any `.html` file directly in a browser — no build or server required. Use a local server (e.g. VS Code Live Server) to avoid CORS issues with external image assets.
 
-Purbachal Apparel Limited  
-South Panjora, Ward No. 05, Nagori, Kaliganj, Gazipur-1720, Bangladesh  
-info@purbachalapparel.com  
-+880 1713 001008
+## Contact
 
-## Contact Form
-
-The contact form on `contact.html` uses [EmailJS](https://www.emailjs.com/), which sends submissions directly to `info@purbachalapparel.com` using a connected Gmail account. No server or backend is needed. Free tier allows 200 emails per month.
-
-**To change the destination email:**
-
-1. Log in at https://dashboard.emailjs.com/ with `sheikh.k.m.m.tahmid@gmail.com`
-2. Go to **Email Templates > Contact Us**
-3. Change the **To Email** field to the new address and click Save
-
-**To change the sending Gmail account:**
-
-1. Go to **Email Services** in the dashboard
-2. Click the Gmail service and reconnect with a different account
-
-**Keys (all public, safe in client-side code):**
-
-| Key | Value |
-|---|---|
-| Public Key | `mt429GxgF_853gm9a` |
-| Service ID | `service_l20zm0b` |
-| Template ID | `template_tjydd46` |
-
-These are referenced in the inline `<script>` block inside the contact form in `contact.html`.
-
-## Built By
-
-Designed and developed by [SKMMT](http://skmmt.rootexception.com/).
+- Email: info@maestro.com.bd
+- Phone: +880 1713 336 401 / +880 1713 336 406
+- Trade License: TRAD/DNCC/138637/2022
